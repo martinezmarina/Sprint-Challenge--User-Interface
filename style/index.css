@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+
 html{
     font-size:62.5%;
 }
@@ -98,7 +99,9 @@ div.hero-image{
     height:auto;
     align-self: center;
 }
-
+div.hero-image img{
+    max-width:100%;
+}
 h1, h2, h3, h4, h5 {
     font-size: 1.8rem;
     margin-bottom:4%;
@@ -110,7 +113,7 @@ p {
 }
 
 .container {
-    width: 60%;
+    width: 60.5%;
     margin: 0 auto;
 }
 
@@ -220,17 +223,24 @@ footer nav a {
 }
 /*///////// Styling for Mobile ///////////////*/
 @media(max-width: 600px){
+    .container{
+        margin:0;
+        width:100%;
+    }
+    .hero-image img{
+        margin-top: 15%;
+    }
     header{
         height:80vh;
     }
     header nav{
         height:30%;
-        margin:10%;
+        padding:10%;
         flex-direction: column;
         justify-content: center;
     }
     div.logo img{
-        margin-top: 20%;
+        margin-top: 60%;
         margin-bottom: 20%;
     }
 
@@ -244,15 +254,14 @@ footer nav a {
         border: 1px solid black;
         border-radius: 30%;
     }
-    .container{
-        width:100%;
-    }
     .top-content{
         flex-direction: column;
+        justify-content: center;
     }
     .top-content .text-container{
         width: 100%;
-        margin-left: 10%;
+        padding-left: 7%;
+        padding-right: 7%;
     }
     .top-content .text-container h2{
         font-weight: 600;
