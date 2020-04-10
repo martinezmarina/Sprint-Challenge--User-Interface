@@ -87,6 +87,7 @@ div.links{
     align-items:center;
 }
 div.links a{
+    text-align: center;
     font-size: 1.8rem;
     text-decoration: none;
     color:black;
@@ -94,6 +95,7 @@ div.links a{
 div.hero-image{
     margin-top: 3%;
     width:100%;
+    height:auto;
     align-self: center;
 }
 
@@ -128,7 +130,7 @@ p {
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 3%;
     border-bottom: 1px dashed black;
 }
 
@@ -143,25 +145,55 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box{
     width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
+    height: 15vh;
+    margin: 3% 2.5%;
+    background:black;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+#box1{
+    background:teal ;
+}
+#box2{
+    background-color:gold;
+}
+#box3{
+    background-color:cadetblue;
+}
+#box4{
+    background-color: coral;
+}
+#box5{
+    background-color: crimson;
+}
+#box6{
+    background-color: forestgreen;
+}
+#box7{
+    background-color: darkorchid;
+}
+#box8{
+    background-color: hotpink;
+}
+#box9{
+    background-color: indigo;
+}
+#box10{
+    background-color: dodgerblue;
+}
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 3%;
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.8rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -178,11 +210,68 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 3% 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+/*///////// Styling for Mobile ///////////////*/
+@media(max-width: 600px){
+    header{
+        height:80vh;
+    }
+    header nav{
+        height:30%;
+        margin:10%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.logo img{
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    div.links{
+        flex-direction: column;
+        width:20%;
+    }
+    div.links a{
+        width:50vw;
+        margin-top:3%;
+        border: 1px solid black;
+        border-radius: 30%;
+    }
+    .container{
+        width:100%;
+    }
+    .top-content{
+        flex-direction: column;
+    }
+    .top-content .text-container{
+        width: 100%;
+        margin-left: 10%;
+    }
+    .top-content .text-container h2{
+        font-weight: 600;
+    }
+    .middle-content h2{
+        padding: 0 10%;
+        font-weight: 600;
+    }
+    .middle-content .boxes .box{
+        margin:3% 30%;
+        width:30%;
+        height:20vh;
+    }
+    .bottom-content{
+        flex-direction: column;
+        margin:3%;
+    }
+    .bottom-content .text-container h2{
+        font-weight: 600;  
+        margin: 3% 0;  
+    }
 }
